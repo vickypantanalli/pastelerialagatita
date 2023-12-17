@@ -1,0 +1,173 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    display: grid;
+    grid-template-rows: 50px calc(100vh - 100px) 50px;
+    grid-template-areas:
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    grid-area: nav;
+    background-color: #a81786;
+    color: white;
+}
+
+.nav i {
+    align-self: center;
+    font-size: 1.5rem;
+    padding-right: .5em;
+}
+
+.menu {
+    display: none;
+    list-style-type: none;
+}
+
+
+main {
+    /* display: flex;
+    flex-direction: wrap; */
+    overflow-y: scroll;
+    grid-area: main;
+    padding: 10px;
+    gap: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    margin-bottom: px;
+    min-height: 380px;
+    min-width: 250px;
+    border: 1px dotted black;
+}
+
+.imagen {
+    background-image: url(../img/1.jpg);
+    background-size: cover;
+    background-position: center;
+    filter: grayscale(100%);
+    height: 23rem;
+    transition: filter 0.5s linear;
+}
+
+.imagen:hover {
+    filter: grayscale(0%);
+}
+
+.dos {
+    background-image: url(../img/2.jpg);
+}
+
+.tres {
+    background-image: url(../img/4.jpg);
+}
+
+.cuatro {
+    background-image: url(../img/3.jpg);
+}
+
+.cinco {
+    background-image: url(../img/5.jpg);
+}
+
+.seis {
+    background-image: url(../img/6.jpg);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.info {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-area: footer;
+}
+
+footer {
+    grid-area: footer;
+    padding: 1.5em;
+    background-color: #840366;
+    color: white;
+}
+
+@media (min-width: 576px) {
+    body {
+        grid-template-columns: 180px auto;
+        grid-template-areas:
+        "nav main main"
+        "nav main main"
+        "footer footer footer";
+    }
+
+    .nav img {
+        height: 50px;
+    }
+
+    .nav i {
+        display: none;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 15px;
+}
+
+    .card {
+        height: 480px;
+        min-width: 400px;
+        flex-grow: 1;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        color: whitesmoke;
+        visibility: visible;
+        padding-top: 2em;
+    }
+
+    ul {
+        align-self: center;
+        margin-bottom: 18em;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        height: 380px;
+        min-width: 300px;
+        max-width: 350px;
+        flex-grow: 1;
+    }
+}
