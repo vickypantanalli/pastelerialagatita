@@ -1,9 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -37,8 +38,6 @@ body {
 
 
 main {
-    /* display: flex;
-    flex-direction: wrap; */
     overflow-y: scroll;
     grid-area: main;
     padding: 10px;
@@ -91,6 +90,14 @@ main {
 a {
     text-decoration: none;
     color: white;
+}
+
+h4 {
+    font-size: 1.7rem;
+}
+
+h5 {
+    font-size: 1.3rem;
 }
 
 .info {
