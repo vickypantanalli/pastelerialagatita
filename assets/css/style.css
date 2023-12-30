@@ -36,7 +36,6 @@ body {
     list-style-type: none;
 }
 
-
 main {
     overflow-y: scroll;
     grid-area: main;
@@ -102,7 +101,7 @@ h5 {
 
 .info {
     padding-top: 20px;
-    padding-bottom: 20px;
+   /*  padding-bottom: 20px; */
     text-align: center;
     font-size: 2rem;
 }
