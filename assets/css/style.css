@@ -101,7 +101,6 @@ h5 {
 
 .info {
     padding-top: 10px;
-   /*  padding-bottom: 20px; */
     text-align: center;
     font-size: 2rem;
 }
@@ -111,10 +110,6 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    grid-area: footer;
-}
-
-footer {
     grid-area: footer;
     padding: 1.5em;
     background-color: #840366;
