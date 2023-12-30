@@ -86,6 +86,11 @@ main {
     background-image: url(../img/6.jpg);
 }
 
+button {
+    padding: 5px;
+    border-radius: 5px;
+}
+
 a {
     text-decoration: none;
     color: white;
@@ -115,6 +120,7 @@ footer {
     background-color: #840366;
     color: white;
 }
+
 
 @media (min-width: 576px) {
     body {
